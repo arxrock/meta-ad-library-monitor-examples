@@ -1,0 +1,26 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.arxrock/meta-ad-library-monitor",
+  "title": "Facebook & Instagram Ads Library Monitor",
+  "description": "Track Facebook & Instagram ads: only NEW and ENDED competitor ads, winning ads, Slack alerts.",
+  "version": "0.4.0",
+  "repository": {
+    "url": "https://github.com/arxrock/meta-ad-library-monitor-examples",
+    "source": "github"
+  },
+  "websiteUrl": "https://apify.com/arxrock/meta-ad-library-monitor",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.apify.com?tools=arxrock/meta-ad-library-monitor",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Optional: 'Bearer YOUR_APIFY_TOKEN'. Without it the client signs in to Apify with OAuth.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}

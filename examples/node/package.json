@@ -1,0 +1,7 @@
+{
+  "name": "meta-ad-library-monitor-node-example",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node monitor-competitors.mjs" },
+  "dependencies": { "apify-client": "^2.9.0" }
+}
