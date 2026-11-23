@@ -11,6 +11,8 @@ Ready-to-run examples for **[Facebook & Instagram Ads Library Scraper & Monitor]
 - Get the changes in **Slack**, Make, Zapier, n8n or any webhook.
 - Use it from **AI agents** through MCP; agents can even pay per use on their own.
 
+▶ **[Watch the 1-minute demo](media/demo.mp4)**
+
 ## Quick start (no code)
 
 1. Open the [Actor page](https://apify.com/arxrock/meta-ad-library-monitor) and click **Try for free**.
