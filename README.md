@@ -4,26 +4,26 @@
 [![MCP](https://img.shields.io/badge/MCP-ready-ff7a00)](examples/mcp/README.md)
 [![License: MIT](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
 
-Ready-to-run examples for **[Facebook & Instagram Ads Library Scraper & Monitor](https://apify.com/arxrock/meta-ad-library-monitor)**, an Apify Actor that reads the public Meta Ad Library and tells you **only what changed**: competitor ads that were launched (`NEW`) or stopped (`ENDED`) since your last check.
+Ready-to-run examples for **[Facebook & Instagram Ads Library Scraper & Monitor](https://apify.com/arxrock/meta-ad-library-monitor)**, an Apify Actor that scrapes every Facebook and Instagram ad from the public Meta Ad Library with full details, and flags what changed: competitor ads that were launched (`NEW`) or stopped (`ENDED`) since your last check.
 
-- Watch competitor pages or keywords on a schedule, without a Facebook login or a Meta developer account.
-- Find **winning ads**: ads a brand has kept paying for 30, 60 or 90+ days.
+- Watch competitor pages or keywords on Facebook, Instagram or both, on a schedule, without a Facebook login or a Meta developer account.
+- Find **winning ads**: the ones a brand keeps paying for month after month (you choose the minimum days).
 - Get the changes in **Slack**, Make, Zapier, n8n or any webhook.
 - Use it from **AI agents** through MCP; agents can even pay per use on their own.
 
-▶ **[Watch the 1-minute demo](media/demo.mp4)**
+▶ **[Watch the demo (56 s)](media/demo.mp4)**
 
 ## Quick start (no code)
 
 1. Open the [Actor page](https://apify.com/arxrock/meta-ad-library-monitor) and click **Try for free**.
-2. Paste competitor pages (any Ad Library URL works) or keywords, pick a country.
-3. Set **Mode** to *Changes only* and give the monitor a name, then add a weekly **Schedule**.
+2. Paste competitor pages (any Ad Library URL works) or keywords, pick a country and the platforms.
+3. Set **Mode** to *Changes (NEW / ENDED)* and give the monitor a name, then add a weekly **Schedule**.
 
 ## Examples
 
 | What | File |
 |---|---|
-| Weekly competitor check, only NEW/ENDED ads (Node.js) | [examples/node/monitor-competitors.mjs](examples/node/monitor-competitors.mjs) |
+| Weekly competitor check, NEW and ENDED ads (Node.js) | [examples/node/monitor-competitors.mjs](examples/node/monitor-competitors.mjs) |
 | Winning ads running 60+ days (Python) | [examples/python/monitor_competitors.py](examples/python/monitor_competitors.py) |
 | One-call JSON with cURL | [examples/curl/run.sh](examples/curl/run.sh) |
 | Slack, Make, Zapier, n8n alerts and the webhook JSON format | [examples/webhooks/README.md](examples/webhooks/README.md) |
@@ -43,9 +43,10 @@ npx skills add arxrock/meta-ad-library-monitor-examples --skill competitor-ads-m
 | `pages` | `["15087023444"]` or Ad Library URLs | Competitor pages to watch |
 | `searchTerms` | `["protein powder"]` | Keywords |
 | `country` | `"US"`, `"IT"`, `"ALL"` | Two-letter code |
-| `mode` | `"changes"` or `"full"` | `changes` returns only NEW/ENDED after the first (baseline) run |
+| `mode` | `"changes"` or `"full"` | `full`: every ad each run. `changes`: NEW and ENDED ads after the first (baseline) run |
 | `monitorName` | `"competitors-us"` | Each name keeps its own memory |
-| `minDaysRunning` | `60` | Only long-running ads |
+| `minDaysRunning` | `60` | Winning ads: minimum days running, any number |
+| `platforms` | `["instagram"]` | `facebook`, `instagram`, `messenger`, `audience_network`, `threads`, `whatsapp`; empty = all |
 | `mediaType` | `"video"` | `all`, `image`, `video`, `meme`, `none` |
 | `maxAdsPerSearch` | `200` | Per keyword or page |
 | `webhookUrl` | Slack or any HTTPS URL | Summary after each run |
@@ -59,7 +60,7 @@ Pay per use, proxy and compute included: **$0.20 per 1,000 ads checked + $0.30 p
 ## Links
 
 - Actor: https://apify.com/arxrock/meta-ad-library-monitor
-- Tutorial: [How to monitor your competitors' Facebook ads automatically (and get only what changed)](https://dev.to/arxrock/how-to-monitor-your-competitors-facebook-ads-automatically-and-get-only-what-changed-p5c)
+- Tutorial: [How to track competitor ads on Facebook & Instagram automatically](https://dev.to/arxrock/how-to-monitor-your-competitors-facebook-ads-automatically-and-get-only-what-changed-p5c)
 - Questions or bugs: open an issue here or on the Actor page.
 
 *Facebook, Instagram and Meta are referenced only to describe the public data source. This project is independent and is not endorsed by, sponsored by or affiliated with Meta.*
