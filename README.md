@@ -55,7 +55,7 @@ Each result row has `status`, `pageName`, `bodyText`, `title`, `startDate`, `day
 
 ## Pricing
 
-Pay per use, proxy and compute included: **$0.20 per 1,000 ads checked + $0.30 per 1,000 rows + $0.003 per keyword or page** (10% off on Apify Scale, 20% off on Business). A weekly check of 5 competitor pages is about $0.08. The free Apify plan gets a preview (2 keywords/pages, 30 ads each).
+Pay per use, proxy and compute included: **$0.20 per 1,000 ads checked + $0.30 per 1,000 rows + $0.003 per keyword or page** (10% off on Apify Scale, 20% off on Business). A weekly check of 5 competitor pages is about $0.08. It works on the free Apify plan too, with full results (its $5 monthly credit covers roughly 10,000 ads).
 
 ## Links
 
