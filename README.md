@@ -11,7 +11,7 @@ Ready-to-run examples for **[Facebook & Instagram Ads Library Scraper & Monitor]
 - Get the changes in **Slack**, Make, Zapier, n8n or any webhook.
 - Use it from **AI agents** through MCP; agents can even pay per use on their own.
 
-▶ **[Watch the demo (56 s)](media/demo.mp4)**
+▶ **[Watch the demo (64 s)](media/demo.mp4)**
 
 ## Quick start (no code)
 
@@ -43,7 +43,7 @@ npx skills add arxrock/meta-ad-library-monitor-examples --skill competitor-ads-m
 | `pages` | `["15087023444"]` or Ad Library URLs | Competitor pages to watch |
 | `searchTerms` | `["protein powder"]` | Keywords |
 | `country` | `"US"`, `"IT"`, `"ALL"` | Two-letter code |
-| `mode` | `"changes"` or `"full"` | `full`: every ad each run. `changes`: NEW and ENDED ads after the first (baseline) run |
+| `mode` | `"changes"` or `"full"` | `full`: all ads on every run. `changes`: NEW and ENDED ads after the first (baseline) run |
 | `monitorName` | `"competitors-us"` | Each name keeps its own memory |
 | `minDaysRunning` | `60` | Winning ads: minimum days running, any number |
 | `platforms` | `["instagram"]` | `facebook`, `instagram`, `messenger`, `audience_network`, `threads`, `whatsapp`; empty = all |
